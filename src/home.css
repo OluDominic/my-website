@@ -1,0 +1,103 @@
+body {
+    height: 125vh;
+    background-size: cover;
+    background-image: url("dark-starry-sky-1694000\ \(1\).jpg");
+    font-family: sans-serif;
+}
+
+.form {
+    margin-top: 150px;
+}
+
+.gradient {
+    background: radial-gradient(
+        hsl(100 100% 60%),
+        hsl(200 100% 60%)
+    ) fixed;
+    background: conic-gradient(
+        hsl(100 100% 60%),
+        hsl(200 100% 60%),
+        hsl(100 100% 60%)
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hello-world {
+    color: cyan;
+    font-size: 30px;
+    margin-left: 40%;
+}
+
+.header {
+    font-size: 17px;
+    color: magenta;
+}
+
+.hello {
+    color: orange;
+}
+
+.name {
+    color: white;
+    font-size: 40px;
+    margin-left: 32%;
+}
+
+.prof {
+    color: whitesmoke;
+    font-size: 18px;
+    margin-left: 35%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.butt {
+    margin-left: 42%;
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    font-size: 18px;
+    border: 2px solid wheat;
+    padding: 14px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.butt:hover {
+    color: violet;
+    border: 2px solid mediumaquamarine;
+}
+
+.social-container {
+    background: transparent;
+    padding: 25px 50px;
+    margin-left: 33%;
+}
+
+
+
+.icon, .facebook {
+    color: #4968ad;
+    padding: 4px 8px;
+}
+
+.icon, .twitter {
+    color: #49a1eb;
+    padding: 4px 8px;
+}
+
+.icon, .link {
+    color: #0077b5;
+    padding: 4px 8px;
+}
+
+.icon, .github {
+    color: #dbbaba;
+    padding: 4px 8px;
+}
+
+.icon, .dev {
+    color: white;
+    padding: 4px 8px;
+}

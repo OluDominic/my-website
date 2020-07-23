@@ -2,23 +2,24 @@ import React from 'react'
 import Home from './home';
 import About from './about';
 import Contact from './contact';
-import History from './history';
+import history from './history';
+import Notfound from './notFound'
+import Website from './website';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import { Route, Redirect, Link, BrowserRouter as Router, NavLink, Switch, BrowserRouter } from 'react-router-dom';
 
 class Homepage extends React.Component {
     
     render (){
         return(
-                <BrowserRouter history={History}>
-                  <div>  
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/contact" component={Contact}/>
-                    </Switch>
-                  </div>  
-                </BrowserRouter>
+            <BrowserRouter history={history}>
+                  <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/contact' component={Contact} />
+                    <Route path='/about' component={About} />
+                    <Route component = {Notfound} />
+                  </Switch> 
+            </BrowserRouter>
         )
     }
 }

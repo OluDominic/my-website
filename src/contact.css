@@ -1,0 +1,106 @@
+
+.contact {
+    margin-left: 100px;
+}
+
+.render {
+    
+}
+
+.render-inline {
+    color: #515152;
+    padding: 2px 2px;
+    font-family: 'La Belle Aurore',cursive;
+    font-weight: 700;
+}
+
+.contact-me {
+    color: cyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2px 4px;
+    font-size: 53px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all .3s ease-out;
+    will-change: transform;
+}
+
+.contact-me:hover {
+    transform: translate(-2px);
+}
+
+.what-i-do {
+    color: wheat;
+    padding: 4px 10px;
+    max-width: 500px;
+}
+
+.entry {
+    padding: 14px;
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.names {
+    padding: 14px 20px;
+    width: 400px;
+    background-color: rgb(41, 36, 36);
+    color: rgb(196, 212, 196);
+    border-bottom: none;
+    border-right: none;
+    border-radius: 2px;
+}
+
+.message {
+    padding: 6px 10px;
+    height: 200px;
+    width: 420px;
+    background-color: rgb(41, 36, 36);
+    color: rgb(196, 212, 196);
+    border: none;
+}
+
+.send {
+    padding: 14px 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: cyan;
+    background-color: black;
+    border: 2px solid cyan;
+    margin-left: 350px;
+    width: 90px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.send, .send-span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.send, .send-span::after {
+    content: '\00bb';
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.send:hover, .send-span{
+    padding-right: 25px;
+}
+
+.send:hover, .send-span::after {
+    opacity: 1;
+}
+
+.details {
+    margin-left: 18px;
+    color: white;
+    background-color: black;
+    max-width: 250px;
+    height: 150px;
+}

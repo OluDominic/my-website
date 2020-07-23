@@ -1,44 +1,51 @@
-import React from 'react';
-import {Link,NavLink,withRouter } from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, NavLink, Route, Link } from "react-router-dom";
+import Notfound from './notfound'
+import history from './history';
+import Home from './home';
+import About from './about';
+import Contact from './contact';
+import Portfolio from './portfolio';
+import './website.css';
+import Logo from './cover.png';
 
 
-
-class Website extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  render(){
-    return(
-        <nav>
-            <div>
-              <ul>
-                <li>
-                  <NavLink to="/">Home</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact">Contact</NavLink>
-                </li>
-              </ul>
-              <div>
-                <h4><span>Hello, </span> World.</h4>
-                <h3>I,m Dominic Oludare </h3>
-                <p>| Front-end Developer | Digital Marketer</p>
-              </div>
-              <div>
-                <button>
-                  Hire me
-                </button>
-              </div>
-            </div>
-        </nav>
+class App extends Component {
+  render() {
+    return (
+        <BrowserRouter history={history}>
+        <div>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          
+          <ul className="navbar-nav mr-auto">
+          <Link to={'/'}>
+          <img className="my-logo" src={Logo} alt={Logo}/>
+          </Link>
+            <li className="link">
+                <NavLink to={'/'} className="nav-link"> Home </NavLink>
+            </li>
+            <li className="link">
+                <NavLink to={'/contact'} className="nav-link">Contact</NavLink>
+            </li>
+            <li className="link">
+                <NavLink to={'/about'} className="nav-link">About</NavLink>
+            </li>
+            <li className="link">
+                <NavLink to={'/portfolio'} className="nav-link">Portfolio</NavLink>
+            </li>
+          </ul>
+          </nav>
+          <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/contact' component={Contact} />
+              <Route path='/about' component={About} />
+              <Route path='/portfolio' component={Portfolio} />
+              <Route component = {Notfound} />
+          </Switch>
+        </div>
+        </BrowserRouter>
     );
   }
 }
 
-
-export default withRouter(Website)
+export default App;

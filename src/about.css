@@ -1,0 +1,45 @@
+.about-me, .skills  {
+    margin-left: 100px;
+    padding: 10px;
+    color: wheat;
+    max-width: 400px;
+}
+
+.title {
+    color: cyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.language {
+    float: right;
+    margin-right: 30%;
+    padding: 20px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+
+.language {
+    background-color: goldenrod;
+    width: 300px;
+    border: 15px solid gray;
+    padding: 50px;
+    margin: 20px;
+    margin-right: 200px;
+}
+
+.react {
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0%       { transform: translatex(100px) translatey(-100px) }
+    50%      { transform: translatex(100px) translatey(200px); }
+    100%     { transform: translatex(100px) translatey(100px) }
+}
+
+
+
+
