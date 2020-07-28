@@ -14,7 +14,7 @@ class About extends React.Component {
                 </div>
                 
                 
-                <div className="language">
+                <div className="lang">
                     <div className="trans">
                     <div className="react">ReactJS</div>
                     <div className="html">HTML</div>

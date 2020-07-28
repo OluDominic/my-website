@@ -1,6 +1,25 @@
 import React from 'react';
 import './portfolio.css'
 import Pic1 from './abstract-art-black-background-blur-1040499 (1) (1).jpg'
+import ImageGallery from 'react-image-gallery';
+
+const Images = [
+    {
+        original: './Screenshot (28).png',
+        title: 'Homepage',
+        thumbnail: './Screenshot (28).png'
+    },
+    {
+        original: 'Screenshot (29).png',
+        title: 'Login Page',
+        thumbnail: 'Screenshot (28).png'
+    },
+    {
+        original: 'Screenshot (20).png',
+        title: 'Registration Page',
+        thumbnail: 'Screenshot (28).png'
+    }
+]
 
 
 class Portfolio extends React.Component {
@@ -12,13 +31,10 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="portfolio">
                 <h1>Portfolio</h1>
                 <div className="pic-whole">
-                    <img className="image1" src={Pic1} alt={Pic1} />
-                    <div className="pic-slide">
-                        <div className="pic-text">Siwes Project</div>
-                    </div>
+                    <ImageGallery items={Images} />;
                 </div>
             </div>
         );

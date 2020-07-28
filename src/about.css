@@ -20,13 +20,14 @@
     position: relative;
 }
 
-.language {
-    background-color: goldenrod;
+.lang {
+    background-color: transparent;
     width: 300px;
-    border: 15px solid gray;
+    border: 15px solid transparent;
     padding: 50px;
     margin: 20px;
-    margin-right: 200px;
+    margin-left: 100px;
+    color: white;
 }
 
 .react {
