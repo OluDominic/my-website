@@ -1,25 +1,10 @@
 import React from 'react';
 import './portfolio.css'
 import Pic1 from './abstract-art-black-background-blur-1040499 (1) (1).jpg'
-import ImageGallery from 'react-image-gallery';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import {Link} from 'react-router-dom';
 
-const Images = [
-    {
-        original: './Screenshot (28).png',
-        title: 'Homepage',
-        thumbnail: './Screenshot (28).png'
-    },
-    {
-        original: 'Screenshot (29).png',
-        title: 'Login Page',
-        thumbnail: 'Screenshot (28).png'
-    },
-    {
-        original: 'Screenshot (20).png',
-        title: 'Registration Page',
-        thumbnail: 'Screenshot (28).png'
-    }
-]
 
 
 class Portfolio extends React.Component {
@@ -31,11 +16,33 @@ class Portfolio extends React.Component {
 
     render() {
         return (
+            <div className="flex-body">
+            <h1 className="header">My Projects</h1>
             <div className="portfolio">
-                <h1>Portfolio</h1>
-                <div className="pic-whole">
-                    <ImageGallery items={Images} />;
+                <div className="project">
+                    <span className="icons">
+                    <Link to="https://github.com/OluDominic/siwes/tree/master/src">
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="white"/>
+                        </Link>
+                    </span>
+                    <p className="siwes">E-Siwes <br/> Portfolio.</p>
+                    <p className="languages">HTML/CSS REACT</p>
                 </div>
+                <div className="project2">
+                    <span className="icons">
+                        <FontAwesomeIcon icon={faGithub} size="2x"/>
+                    </span>
+                    <p className="siwes">My Music <br/> App.</p>
+                    <p className="languages">API HTML/CSS REACT</p>
+                </div>
+                <div className="project3">
+                    <span className="icons">
+                        <FontAwesomeIcon icon={faGithub} size="2x"/>
+                    </span>
+                    <p className="siwes">My Weather <br/> API.</p>
+                    <p className="languages">API HTML/CSS REACT</p>
+            </div>
+            </div>
             </div>
         );
     }

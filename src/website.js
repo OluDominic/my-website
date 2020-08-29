@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
         <BrowserRouter history={history}>
-        <div>
+        <div className="body">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
           
           <ul className="navbar-nav mr-auto">

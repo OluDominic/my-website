@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './contact.css';
-import Map from './map';
+//import Map from './map';
 
 
 
@@ -45,9 +45,6 @@ class Contact extends React.Component {
                 <div>
                     <p className="render-inline">&#41;;</p>
                     <p className="render-inline">&#125;</p>
-                </div>
-                <div style={{marginRight: '0px'}}>
-                    <Map />
                 </div>
             </div>
         );
