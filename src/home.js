@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import Footer from './footer'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faGithub, faLinkedin, faDev } from '@fortawesome/free-brands-svg-icons';
@@ -14,29 +15,31 @@ class Home extends React.Component {
                 <p className="prof">| Front-end Developer | Digital Marketer |</p>
               </div>
               <div>
-              <Link to="/contact">
+              <Link to="/contact" className="buttons">
                 <button color="white" className="butt">
-                  <span>Hire me</span>
+                  Hire me
                 </button>
               </Link>
            </div>
            <div className="social-container">
              <Link className="icon">
-                <FontAwesomeIcon className="facebook" icon={ faFacebook } size="2x"/>
+                <FontAwesomeIcon className="facebook" icon={ faFacebook } size="3x"/>
              </Link>
              <Link className="icon">
-                <FontAwesomeIcon className="twitter" icon={ faTwitter } size="2x"/>
+                <FontAwesomeIcon className="twitter" icon={ faTwitter } size="3x"/>
              </Link>
              <Link className="icon">
-                <FontAwesomeIcon className="github" icon={ faGithub } size="2x"/>
+                <FontAwesomeIcon className="github" icon={ faGithub } size="3x"/>
              </Link>
              <Link className="icon">
-                <FontAwesomeIcon className="link" icon={ faLinkedin } size="2x"/>
+                <FontAwesomeIcon className="link" icon={ faLinkedin } size="3x"/>
              </Link>
              <Link className="icon">
-                <FontAwesomeIcon className="dev" icon={ faDev } size="2x"/>
+                <FontAwesomeIcon className="dev" icon={ faDev } size="3x"/>
              </Link>
            </div>
+           
+          <Footer/>
             </div>
         );
     }

@@ -4,14 +4,12 @@
 }
 
 .portfolio {
-    margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 8%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    padding-left: 50px;
 }
 .header {
     font-size: 35px;
@@ -25,6 +23,7 @@
     background: linear-gradient(180deg,#f3cbab,#feedca);
     width: 300px;
     height: 300px;
+    transition: 0.3s all ease-in-out;
 }
 
 .project2 {
@@ -76,4 +75,35 @@
     align-items: flex-end;
     margin-left: 22%;
     margin-top: 5%;
+}
+
+@media all and (max-width: 800px ) {
+
+    .flex-body {
+        display: flex;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .header {
+        color: white;
+        margin-left: 80px;
+    }
+
+    .portfolio {
+        display: flex;
+        margin-left: 28%;
+    }
+
+    .project, .project2, .project3 {
+        padding: 20px;
+        width: 80%;
+        height: 80%;
+        margin-top: 15%;
+    }
+
+    .project {
+        margin-top: 0;
+    }
+    
 }

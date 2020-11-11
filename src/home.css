@@ -1,27 +1,43 @@
 body {
     height: 125vh;
     background-image: url("dark-starry-sky-1694000\ \(1\).jpg");
-    max-width: fit-content;
     font-family: sans-serif;
+    background-size: cover;
+    width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-    body {
-        max-width: 65%;
-    }
-}
 
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px ) {
     .form {
-        margin-left: -20%;
+        top: 10%;
+    }
+
+}
+
+
+@media all and (max-width: 320px) {
+    
+}
+
+@media all and (max-width: 320px) {
+    .name {
+        font-size: 30px;
+    }
+
+    .form {
+        top: 10%;
+    }
+
+    .prof {
+        font-size: 10px;
     }
 }
 
 .form {
-    top: 25%;
-    left: 23%;
     position: absolute;
-    width: 540px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 100px;
 }
 
 .gradient {
@@ -40,8 +56,10 @@ body {
 
 .hello-world {
     color: cyan;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-size: 30px;
-    margin-left: 34%;
     animation: fadeIn ease 20s;
     -webkit-animation: fadeIn ease 20s;
     -moz-animation: fadeIn ease 20s;
@@ -75,8 +93,9 @@ body {
 }
 
 .headers {
-    font-size: 17px;
+    font-size: 16px;
     color: magenta;
+    display: none;
 }
 
 .hello {
@@ -85,22 +104,33 @@ body {
 
 .name {
     color: white;
-    font-size: 40px;
-    margin-left: 23%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 8px;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .prof {
+    display: flex;
+    justify-content: center;
     color: whitesmoke;
-    font-size: 18px;
-    margin-left: 31%;
+    font-size: 17px;
+    padding: 20px 14px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
 .butt {
-    margin-left: 46%;
     background-color: transparent;
-    color: white;
-    display: inline-block;
+    color: cyan;
     width: 150px;
     font-size: 18px;
     border: 2px solid wheat;
@@ -112,37 +142,84 @@ body {
 .butt:hover {
     color: violet;
     border: 2px solid mediumaquamarine;
+    transition: all 0.3s ease-out;
 }
 
 .social-container {
     background: transparent;
-    padding: 25px 50px;
-    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    size: 20px;
 }
 
 
 
 .icon, .facebook {
     color: #4968ad;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    opacity: 0.6;
 }
 
 .icon, .twitter {
     color: #49a1eb;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    opacity: 0.6;
 }
 
 .icon, .link {
     color: #0077b5;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    opacity: 0.6;
 }
 
 .icon, .github {
     color: #dbbaba;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    opacity: 0.6;
 }
 
 .icon, .dev {
     color: white;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    opacity: 0.6;
+}
+
+.twitter:hover {
+    opacity: 1;
+    animation: bounce 1s ease-out 1;
+}
+
+.facebook:hover {
+    opacity: 1;
+    animation: bounce 1s ease-out 1;
+}
+
+.github:hover {
+    opacity: 1;
+    animation: bounce 1s ease-out 1;
+}
+
+.dev:hover {
+    opacity: 1;
+    animation: bounce 1s ease-out 1;
+}
+
+.link:hover {
+    opacity: 1;
+    animation: bounce 1s ease-out 1;
+}
+
+@keyframes bounce {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+@keyframes anim1 {
+    0%{transform: scaleY(0.5);opacity: 0;}
+    50%{transform: translateY(-10px) scaleY(1.4);
+    opacity: 1;}
+    100%{transform: translateY(-20px) scaleY(0.5);
+    opacity: 0;}
 }

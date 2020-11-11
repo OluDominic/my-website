@@ -11,16 +11,32 @@ import Logo from './cover.png';
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {open: false}
+  }
+
+  onBar =()=> {
+    this.setState({
+      open: !this.state.open
+    })
+  }
   render() {
     return (
         <BrowserRouter history={history}>
         <div className="body">
+          <div className="navbar">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          
-          <ul className="navbar-nav mr-auto">
+            <div className="logo">
           <Link to={'/'}>
           <img className="my-logo" src={Logo} alt={Logo}/>
           </Link>
+          </div>
+          <ul className="navbar-nav-mr-auto" 
+          style={{ transform: this.state.open ? "translateX(0px)" : 
+          "translateX(-300px)"}}>
+          
             <li className="link">
                 <NavLink to={'/'} className="nav-link"> Home </NavLink>
             </li>
@@ -34,7 +50,9 @@ class App extends Component {
                 <NavLink to={'/portfolio'} className="nav-link">Portfolio</NavLink>
             </li>
           </ul>
+          <i onClick={this.onBar} className={this.state.open ? 'fas fa-times' : 'fas fa-bars bars'}></i>
           </nav>
+          </div>
           <Switch>
               <Route exact path='/' component={Home} />
               <Route path='/contact' component={Contact} />
