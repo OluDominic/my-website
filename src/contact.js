@@ -22,12 +22,18 @@ class Contact extends React.Component {
                     </p>
                 </div>
 
-                <form className="entry">
+                <form 
+                className="entry" 
+                name="contact v1 "
+                method="post"
+                data-netlify="true"
+                onSubmit="submit"
+                >
                     <input type="text" className="names" name="name" placeholder="Name"/><br/><br/>
                     <input type="email" className="names" name="email" placeholder="Email"/><br/><br/>
                     <input type="text" className="names" name="subject" placeholder="Subject"/><br/><br/>
                     <textarea className="message" name="message" placeholder="Message" /><br/><br/>
-                    <button className="send"><span className="send-span">Send</span>
+                    <button className="send" type="submit"><span className="send-span">Send</span>
                     </button>
                     <br/>
                 </form>
