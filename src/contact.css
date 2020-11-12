@@ -1,10 +1,7 @@
 
 .contact {
-    margin-left: 100px;
-}
-
-.render {
-    
+    margin-left: 120px;
+    margin-top: 80px;
 }
 
 .render-inline {
@@ -55,7 +52,7 @@
 .message {
     padding: 6px 10px;
     height: 200px;
-    width: 420px;
+    width: 400px;
     background-color: rgb(41, 36, 36);
     color: rgb(196, 212, 196);
     border: none;
@@ -68,7 +65,6 @@
     color: cyan;
     background-color: black;
     border: 2px solid cyan;
-    margin-left: 350px;
     width: 90px;
     border-radius: 6px;
     text-transform: uppercase;
@@ -98,9 +94,40 @@
 }
 
 .details {
-    margin-left: 18px;
     color: white;
     background-color: black;
     max-width: 250px;
     height: 150px;
+    padding: 8px;
+    margin-top: 40px;
+}
+
+.details-props {
+    padding: 4px;
+}
+
+@media all and (max-width: 800px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .message {
+        width: 60%;
+        height: 50%;
+    }
+
+    .names {
+        width: 60%;
+    }
+
+    .details {
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    .contact-me {
+        font-size: 30px;
+    }
 }

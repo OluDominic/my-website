@@ -47,7 +47,7 @@ class App extends Component {
                 <NavLink to={'/about'} className="nav-link">About</NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/portfolio'} className="nav-link">Portfolio</NavLink>
+                <NavLink to={'/portfolio'} className="nav-link">Works</NavLink>
             </li>
           </ul>
           <i onClick={this.onBar} className={this.state.open ? 'fas fa-times' : 'fas fa-bars bars'}></i>

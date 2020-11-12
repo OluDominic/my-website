@@ -87,12 +87,11 @@
 
     .header {
         color: white;
-        margin-left: 80px;
+        margin-left: 30px;
     }
 
     .portfolio {
         display: flex;
-        margin-left: 28%;
     }
 
     .project, .project2, .project3 {

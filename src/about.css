@@ -1,5 +1,10 @@
+.about {
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
 .about-me, .skills  {
-    margin-left: 100px;
     padding: 10px;
     color: wheat;
     max-width: 400px;
@@ -26,7 +31,6 @@
     border: 15px solid transparent;
     padding: 50px;
     margin: 20px;
-    margin-left: 100px;
     color: white;
 }
 
@@ -39,6 +43,28 @@
     0%       { transform: translatex(100px) translatey(-100px) }
     50%      { transform: translatex(100px) translatey(200px); }
     100%     { transform: translatex(100px) translatey(100px) }
+}
+
+@media all and (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .about-me {
+        font-size: 12px;
+        max-width: 75%;
+    }
+
+    .skills {
+        font-size: 12px;
+        max-width: 80%;
+    }
+
+    .contact-me {
+        font-size: 60%;
+    }
 }
 
 

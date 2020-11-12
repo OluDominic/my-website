@@ -4,8 +4,8 @@ import './about.css'
 class About extends React.Component {
     render (){
         return (
-            <div>
-                <div style={{marginLeft: '100px'}}>
+            <div className="about">
+                <div style={{marginLeft: '0px'}}>
                     <p className="render-inline">render()<span>&#123;</span></p>
                     <p className="render-inline">return(</p>
                     <p className="render-inline"><span>&lt;</span>h1<span>&gt;</span></p>
@@ -52,7 +52,7 @@ class About extends React.Component {
                 <div>
 
                 </div>
-                <div style={{marginLeft: '100px'}}>
+                <div style={{marginLeft: '0px'}}>
                     <p className="render-inline">&#41;;</p>
                     <p className="render-inline">&#125;</p>
                 </div>
