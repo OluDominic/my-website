@@ -28,6 +28,14 @@
     <title>React App</title>
   </head>
   <body>
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" className="names" name="name" />
+      <input type="email" className="names" name="email" />
+      <input type="text" className="names" name="subject" />
+      <textarea className="message" name="message" />
+  </form>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
