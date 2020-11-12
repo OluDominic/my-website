@@ -24,11 +24,12 @@ class Contact extends React.Component {
 
                 <form 
                 className="entry" 
-                name="contact v1 "
+                name="contact "
                 method="post"
                 data-netlify="true"
                 onSubmit="submit"
                 >
+                    <input type="hidden" name="form-name" value="contact" />
                     <input type="text" className="names" name="name" placeholder="Name"/><br/><br/>
                     <input type="email" className="names" name="email" placeholder="Email"/><br/><br/>
                     <input type="text" className="names" name="subject" placeholder="Subject"/><br/><br/>
