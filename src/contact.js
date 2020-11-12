@@ -23,7 +23,6 @@ class Contact extends React.Component {
                 </div>
 
                 <form name="contact" method="post" action="/contact" className="entry">
-                    <input type="hidden" name="form-name" value="contact" />
                     <input type="text" className="names" name="name" placeholder="Name" required/><br/><br/>
                     <input type="email" className="names" name="email" placeholder="Email" required/><br/><br/>
                     <input type="text" className="names" name="subject" placeholder="Subject" required/><br/><br/>
