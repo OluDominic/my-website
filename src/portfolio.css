@@ -34,11 +34,13 @@
 .icons {
     padding: 8px 12px;
     margin-top: 10px;
+    justify-content: space-around;
 }
 
+
 .project2:hover {
-    border: 2px solid white;
-    background: black;
+    border: 2px solid gray;
+    background: transparent;
     color: white;
 }
 
@@ -48,15 +50,16 @@
 }
 
 .project3:hover {
-    border: 2px solid white;
-    background: black;
+    border: 2px solid gray;
+    background: transparent;
     color: white;
 }
 
 .project:hover {
-    border: 2px solid white;
-    background: black;
+    border: 2px solid gray;
+    background: transparent;
     color: white;
+    transition: all 0.5s;
 }
 
 

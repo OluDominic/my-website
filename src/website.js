@@ -8,6 +8,9 @@ import Contact from './contact';
 import Portfolio from './portfolio';
 import './website.css';
 import Logo from './cover.png';
+import Slider from './slider'
+import Slidertwo from './sliderTwo'
+import Sliderthree from './sliderThree';
 
 
 class App extends Component {
@@ -38,16 +41,16 @@ class App extends Component {
           "translateX(-300px)"}}>
           
             <li className="link">
-                <NavLink to={'/'} className="nav-link"> Home </NavLink>
+                <NavLink to={'/'} exact activeStyle={{color: 'grey'}} className="nav-link"> Home </NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/contact'} className="nav-link">Contact</NavLink>
+                <NavLink to={'/contact'} exact activeStyle={{color: 'grey'}} className="nav-link">Contact</NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/about'} className="nav-link">About</NavLink>
+                <NavLink to={'/about'} exact activeStyle={{color: 'grey'}} className="nav-link">About</NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/portfolio'} className="nav-link">Works</NavLink>
+                <NavLink to={'/portfolio'} exact activeStyle={{color: 'grey'}} className="nav-link">Works</NavLink>
             </li>
           </ul>
           <i onClick={this.onBar} className={this.state.open ? 'fas fa-times' : 'fas fa-bars bars'}></i>
@@ -58,6 +61,9 @@ class App extends Component {
               <Route path='/contact' component={Contact} />
               <Route path='/about' component={About} />
               <Route path='/portfolio' component={Portfolio} />
+              <Route exact path='/slider' component={Slider} />
+              <Route path='/slidertwo' component={Slidertwo} />
+              <Route path='/weather' component={Sliderthree} />
               <Route component = {Notfound} />
           </Switch>
         </div>

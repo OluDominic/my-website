@@ -1,4 +1,6 @@
-
+body {
+    background-color: black;
+}
 .contact {
     margin-left: 120px;
     margin-top: 80px;
@@ -19,10 +21,16 @@
     font-family: 'Courier New', Courier, monospace;
     transition: all .3s ease-out;
     will-change: transform;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
 }
 
 .contact-me:hover {
     transform: translate(-2px);
+    -webkit-transform: translate(-2px);
+    -moz-transform: translate(-2px);
+    -o-transform: translate(-2px);
 }
 
 .what-i-do {

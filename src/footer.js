@@ -9,10 +9,14 @@ class Footer extends React.Component {
         return (
             <div>
                 <footer>
-                By Oludare Dominic <span>
+                    <span>
+                Dominic Oludare
+                </span>&nbsp;
+                <span className="copy">
                     <FontAwesomeIcon icon={faCopyright} />
-                </span>
+                &nbsp;
                 2020
+                </span>
                 </footer>
             </div>
         );

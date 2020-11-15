@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './contact.css';
@@ -22,20 +23,31 @@ class Contact extends React.Component {
                     </p>
                 </div>
 
+
                 <form 
                 className="entry" 
                 name="contact "
                 method="post"
                 data-netlify="true"
                 onSubmit="submit"
+                actions="/Thank you for your submission/"
+                data-netlify-honeypot="bot-field"
                 >
+                   <p hidden>
+                       <label>
+                           Don't fill this out: <input name="bot-field"/>
+                       </label>
+                   </p>
+
                     <input type="hidden" name="form-name" value="contact" />
                     <input type="text" className="names" name="name" placeholder="Name"/><br/><br/>
                     <input type="email" className="names" name="email" placeholder="Email"/><br/><br/>
                     <input type="text" className="names" name="subject" placeholder="Subject"/><br/><br/>
                     <textarea className="message" name="message" placeholder="Message" /><br/><br/>
+                    <Link to="/">
                     <button className="send" type="submit"><span className="send-span">Send</span>
                     </button>
+                    </Link>
                     <br/>
                 </form>
                 <div className="details">
@@ -45,7 +57,7 @@ class Contact extends React.Component {
                     <span className="details-props">
                         <FontAwesomeIcon style={{color: "cyan"}} icon={faPhone} size="1x"/>
                         {" "}
-                        <span>+234-7052065184</span>
+                        <span>+(234) 705 206 5184</span>
                     </span>
                 </div>
                 

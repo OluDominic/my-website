@@ -9,7 +9,7 @@ class About extends React.Component {
                     <p className="render-inline">render()<span>&#123;</span></p>
                     <p className="render-inline">return(</p>
                     <p className="render-inline"><span>&lt;</span>h1<span>&gt;</span></p>
-                    <h2 className="contact-me">About me</h2>
+                    <h2 className="about-me-ani">About me</h2>
                     <p className="render-inline"><span>&lt;</span>/h1<span>&gt;</span></p>
                 </div>
                 

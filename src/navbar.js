@@ -4,7 +4,6 @@ import About from './about';
 import Contact from './contact';
 import history from './history';
 import Notfound from './notFound'
-import Website from './website';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 
