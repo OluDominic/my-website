@@ -1,7 +1,6 @@
 import React from 'react'
 import './home.css'
 import Footer from './footer'
-import {BrowserRouter as Router } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faGithub, faLinkedin, faDev } from '@fortawesome/free-brands-svg-icons';
@@ -9,7 +8,6 @@ import { faFacebook, faTwitter, faGithub, faLinkedin, faDev } from '@fortawesome
 class Home extends React.Component {
     render (){
         return (
-         <Router>
             <div className="form">
                 <h4 className="hello-world"><span className="hello"><span className="headers">&lt;h1&gt;</span>Hello, </span> World.<span className="headers">&lt;/h1&gt;</span></h4>
                 <div className="gradient">
@@ -43,7 +41,6 @@ class Home extends React.Component {
            
           <Footer/>
             </div>
-         </Router>
         );
     }
 }

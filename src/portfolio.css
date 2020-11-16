@@ -13,10 +13,11 @@
 }
 .header {
     font-size: 35px;
-    color: white;
+    color: rgb(211, 202, 202);
     font-family: Calibre-Regular,sans-serif;
     padding: 0px;
     margin-left: 15%;
+    margin-top: 20px;
 }
 
 .project, .project2, .project3 {
@@ -89,7 +90,7 @@
     }
 
     .header {
-        color: white;
+        color: rgb(202, 192, 192);
         margin-left: 30px;
     }
 

@@ -13,6 +13,10 @@ body {
     font-weight: 700;
 }
 
+.render-inline:focus {
+    outline: none;
+}
+
 .contact-me {
     color: cyan;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -20,7 +24,6 @@ body {
     font-size: 53px;
     font-family: 'Courier New', Courier, monospace;
     transition: all .3s ease-out;
-    will-change: transform;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;

@@ -15,18 +15,16 @@ class About extends React.Component {
                 
                 
                 <div className="lang">
-                    <div className="trans">
                     <div className="react">ReactJS</div>
                     <div className="html">HTML</div>
                     <div className="node">NodeJS</div>
                     <div className="css">CSS</div>
                     <div className="js">JavaScript</div>
                     <div className="mysql">MySql</div>
-                    <div className="wordp">WordPress</div>
+                    <div className="word">WordPress</div>
                     <div className="git">Git</div>
                     <div className="npm">NPM</div>
                     <div className="sass">SASS</div>
-                    </div>
                 </div>
                 
                 <div className="about-me">
