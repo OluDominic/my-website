@@ -11,6 +11,10 @@ import Logo from './cover.png';
 import Slider from './slider'
 import Slidertwo from './sliderTwo'
 import Sliderthree from './sliderThree';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 
 class App extends Component {
@@ -56,16 +60,26 @@ class App extends Component {
           <i onClick={this.onBar} className={this.state.open ? 'fas fa-times' : 'fas fa-bars bars'}></i>
           </nav>
           </div>
-          <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/about' component={About} />
-              <Route path='/portfolio' component={Portfolio} />
-              <Route exact path='/slider' component={Slider} />
-              <Route path='/slidertwo' component={Slidertwo} />
-              <Route path='/weather' component={Sliderthree} />
-              <Route component = {Notfound} />
-          </Switch>
+          <Route render={({location})=> (
+            <TransitionGroup>
+            <CSSTransition
+                timeout={500}
+                classNames="fade"
+              >
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/contact' component={Contact} />
+                <Route path='/about' component={About} />
+                <Route path='/portfolio' component={Portfolio} />
+                <Route path='/slider' component={Slider} />
+                <Route path='/slidertwo' component={Slidertwo} />
+                <Route path='/weather' component={Sliderthree} />
+                <Route component = {Notfound} />
+            </Switch>
+           </CSSTransition>
+          </TransitionGroup>
+          )} />
+        
         </div>
         </BrowserRouter>
     );

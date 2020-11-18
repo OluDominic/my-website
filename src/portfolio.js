@@ -53,7 +53,7 @@ class Portfolio extends React.Component {
 
                 <div className="project2">
                 <span className="icons">
-                    <a href="https://github.com/OluDominic/my-music-app" className="icons">
+                    <a href="https://github.com/OluDominic/dog-ecommerce" className="icons">
                         <FontAwesomeIcon icon={faGithub} size="2x" color="gray" className="fagit"/>
                     </a>
                 </span>

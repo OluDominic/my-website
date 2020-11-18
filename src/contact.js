@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './contact.css';
@@ -40,14 +39,13 @@ class Contact extends React.Component {
                    </p>
 
                     <input type="hidden" name="form-name" value="contact" />
-                    <input type="text" className="names" name="name" placeholder="Name"/><br/><br/>
-                    <input type="email" className="names" name="email" placeholder="Email"/><br/><br/>
-                    <input type="text" className="names" name="subject" placeholder="Subject"/><br/><br/>
-                    <textarea className="message" name="message" placeholder="Message" /><br/><br/>
-                    <Link to="/">
+                    <input type="text" className="names" name="name" placeholder="Name" required /><br/><br/>
+                    <input type="email" className="names" name="email" placeholder="Email" required /><br/><br/>
+                    <input type="text" className="names" name="subject" placeholder="Subject" required /><br/><br/>
+                    <textarea className="message" name="message" placeholder="Message" required /><br/><br/>
+                    
                     <button className="send" type="submit"><span className="send-span">Send</span>
                     </button>
-                    </Link>
                     <br/>
                 </form>
                 <div className="details">
