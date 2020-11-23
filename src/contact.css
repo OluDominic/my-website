@@ -121,7 +121,7 @@ body {
     .contact {
         display: flex;
         flex-direction: column;
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .message {
@@ -141,4 +141,5 @@ body {
     .contact-me {
         font-size: 30px;
     }
+
 }

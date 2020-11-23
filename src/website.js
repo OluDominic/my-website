@@ -15,7 +15,8 @@ import {
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
-
+import {Helmet} from 'react-helmet';
+import Icon from './LogoMakr_1EFpPx.png';
 
 class App extends Component {
 
@@ -33,6 +34,14 @@ class App extends Component {
     return (
         <BrowserRouter history={history}>
         <div className="body">
+          <Helmet>
+            <meta charSet="UTF-8" />
+            <title>Dominic Oludare - Front-end Developer | SEO</title>
+            <meta name="description" content="This is where you can see my works and about my professional career in this portfolio." />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="shortcut icon" href={Icon} />
+          </Helmet>
+
           <div className="navbar">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="logo">

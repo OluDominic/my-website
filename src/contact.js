@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './contact.css';
+import { Helmet } from 'react-helmet'
 //import Map from './map';
 
 
@@ -10,6 +11,9 @@ class Contact extends React.Component {
     render (){
         return (
             <div className="contact">
+               <Helmet>
+                  <title>Dominic Oludare | Contact Page</title>
+               </Helmet>
                 <div className="render">
                     <p className="render-inline">render()<span>&#123;</span></p>
                     <p className="render-inline">return(</p>

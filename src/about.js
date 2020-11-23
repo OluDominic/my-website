@@ -1,10 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import './about.css'
 
 class About extends React.Component {
     render (){
         return (
             <div className="about">
+               <Helmet>
+                  <title>Dominic Oludare | About</title>
+               </Helmet>
                 <div style={{marginLeft: '0px'}}>
                     <p className="render-inline">render()<span>&#123;</span></p>
                     <p className="render-inline">return(</p>

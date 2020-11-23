@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faClone } from '@fortawesome/free-solid-svg-icons'
 import {Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -30,6 +31,11 @@ class Portfolio extends React.Component {
     render() {
         return (
             <div className="flex-body">
+                
+               <Helmet>
+                  <title>Dominic Oludare | Works</title>
+               </Helmet>
+
             <h1 className="header">My Projects</h1>
             <div className="portfolio">
 
