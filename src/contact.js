@@ -55,11 +55,11 @@ class Contact extends React.Component {
                 <div className="details">
                     <p className="details-props">Dominic Oludare,</p>
                     <p className="details-props">Lagos, Nigeria.</p>
-                    <p className="details-props"><span style={{color: "cyan"}}>@</span>: dominicoludare@gmail.com</p>
+                    <p className="details-props"><span style={{color: "cyan"}}>@</span><a href="https://dominicoludare@gmail.com">: dominicoludare@gmail.com</a></p><br/>
                     <span className="details-props">
                         <FontAwesomeIcon style={{color: "cyan"}} icon={faPhone} size="1x"/>
                         {" "}
-                        <span>+(234) 705 206 5184</span>
+                        <span><a className="tel" href="tel:+2347052065184">+(234) 705 206 5184</a></span>
                     </span>
                 </div>
                 

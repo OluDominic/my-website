@@ -37,7 +37,7 @@ body {
 }
 
 .what-i-do {
-    color: wheat;
+    color: white;
     padding: 4px 10px;
     max-width: 500px;
 }
@@ -55,10 +55,17 @@ body {
     width: 400px;
     background-color: rgb(41, 36, 36);
     color: rgb(196, 212, 196);
-    border-bottom: none;
-    border-right: none;
+    border: none;
     border-radius: 2px;
+    outline: none;
 }
+
+.names:focus {
+    border: 1px solid cyan;
+    background: black;
+    outline: none !important;
+}
+
 
 .message {
     padding: 6px 10px;
@@ -67,6 +74,17 @@ body {
     background-color: rgb(41, 36, 36);
     color: rgb(196, 212, 196);
     border: none;
+    outline: none;
+}
+
+.message:focus {
+    border: 1px solid cyan;
+    background: black;
+    outline: none !important;
+}
+
+a {
+    color: cyan;
 }
 
 .send {
@@ -106,7 +124,7 @@ body {
 
 .details {
     color: white;
-    background-color: black;
+    background-color: transparent;
     max-width: 250px;
     height: 150px;
     padding: 8px;
@@ -115,6 +133,10 @@ body {
 
 .details-props {
     padding: 4px;
+}
+
+.tel {
+    text-decoration: none;
 }
 
 @media all and (max-width: 800px) {

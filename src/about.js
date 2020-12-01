@@ -39,7 +39,7 @@ class About extends React.Component {
                         Love watching football, playing video games at my leisure time.
                     </p>
                     <p>Interested in the entire frontend spectrum and working on ambitious projects 
-                        with positive people.
+                        with positive minded developers.
                     </p>
                 </div>
 

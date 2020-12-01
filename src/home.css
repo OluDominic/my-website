@@ -20,10 +20,6 @@ body {
 
 
 @media all and (max-width: 320px) {
-    
-}
-
-@media all and (max-width: 320px) {
     .name {
         font-size: 20px;
     }
@@ -42,31 +38,20 @@ body {
     margin-top: 100px;
 }
 
-.gradient {
-    background: radial-gradient(
-        hsl(100 100% 60%),
-        hsl(200 100% 60%)
-    ) fixed;
-    background: conic-gradient(
-        hsl(100 100% 60%),
-        hsl(200 100% 60%),
-        hsl(100 100% 60%)
-    ) fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
+
 
 .hello-world {
-    color: cyan;
+    color: hsl(100 100% 60%);
     display: flex;
     justify-content: center;
     width: 100%;
     font-size: 30px;
-    animation: fadeIn ease 20s;
-    -webkit-animation: fadeIn ease 20s;
-    -moz-animation: fadeIn ease 20s;
-    -o-animation: fadeIn ease 20s;
-    -ms-accelerator: fadeIn ease 20s;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-accelerator: fadeIn ease 3s;
 }
 
 @keyframes fadeIn {
@@ -100,9 +85,6 @@ body {
     display: none;
 }
 
-.hello {
-    color: orange;
-}
 
 .name {
     font-size: 24px;
@@ -111,12 +93,13 @@ body {
     padding: 10px 8px;
     flex-wrap: nowrap;
     width: 100%;
+    color: hsl(100 100% 60%);
 }
 
 .prof {
     display: flex;
     justify-content: center;
-    color: whitesmoke;
+    color: hsl(100 100% 60%);
     font-size: 13px;
     padding: 20px 14px;
     font-family: 'Times New Roman', Times, serif;
@@ -131,9 +114,9 @@ body {
 
 .butt {
     background-color: transparent;
-    color: cyan;
+    color: #c2aeae;
     font-size: 18px;
-    border: 2px solid wheat;
+    border: 2px solid #c2aeae;
     padding: 20px 40px;
     font-weight: bold;
     cursor: pointer;
@@ -145,8 +128,8 @@ body {
 }
 
 .butt:hover {
-    color: violet;
-    border: 2px solid mediumaquamarine;
+    color: hsl(100 100% 60%);
+    border: 2px solid hsl(100 100% 60%);
     transition: all 0.3s ease-out;
 }
 
@@ -162,31 +145,31 @@ body {
 .icon, .facebook {
     color: #4968ad;
     padding: 4px 10px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .icon, .twitter {
     color: #49a1eb;
     padding: 4px 10px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .icon, .link {
     color: #0077b5;
     padding: 4px 10px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .icon, .github {
     color: #dbbaba;
     padding: 4px 10px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .icon, .dev {
     color: white;
     padding: 4px 10px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .twitter:hover {

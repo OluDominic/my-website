@@ -46,7 +46,6 @@
 
 .lang {
     background-color: transparent;
-    width: 300px;
     border: 15px solid transparent;
     padding: 50px;
     margin: 20px;
@@ -177,6 +176,10 @@
 
     .about-me-ani {
         font-size: 30px;
+    }
+
+    .lang {
+        margin-left: 0;
     }
 }
 

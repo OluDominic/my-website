@@ -60,7 +60,7 @@ nav {
 nav .navbar-nav-mr-auto {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 35%;
 }
 nav .navbar-nav-mr-auto .nav-link {
     font-size: 15px;
@@ -86,7 +86,7 @@ nav .bars {
         display: block;
         position: absolute;
         top: 0;
-        background: brown;
+        background: rgb(78, 87, 30);
         left: 0;
         height: 100vh;
         padding: 40px;
@@ -97,7 +97,7 @@ nav .bars {
 
 
     nav .navbar-nav-mr-auto li {
-        padding: 25px;
+        padding: 40px;
         border-bottom: 1px solid #ccc;
         display: table;
     }
