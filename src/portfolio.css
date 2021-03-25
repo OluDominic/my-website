@@ -20,7 +20,7 @@
     margin-top: 20px;
 }
 
-.project, .project2, .project3 {
+.project, .project2, .project3, .projectFour, .projectFive {
     background: linear-gradient(180deg,#f3cbab,#feedca);
     width: 300px;
     height: 300px;
@@ -51,6 +51,28 @@
 }
 
 .project3:hover {
+    border: 2px solid gray;
+    background: transparent;
+    color: white;
+}
+
+.projectFour {
+    background: linear-gradient(180deg,#dbb4f3,#eb96c6);
+    
+}
+
+.projectFour:hover {
+    border: 2px solid gray;
+    background: transparent;
+    color: white;
+}
+
+.projectFive {
+    background: linear-gradient(180deg,#95da8c,#a16186);
+    
+}
+
+.projectFive:hover {
     border: 2px solid gray;
     background: transparent;
     color: white;
@@ -98,14 +120,14 @@
         display: flex;
     }
 
-    .project, .project2, .project3 {
+    .project, .project2, .project3, .projectFour, .projectFive {
         padding: 20px;
         width: 80%;
         height: 80%;
         margin-top: 15%;
     }
 
-    .project {
+    .projectFour {
         margin-top: 0;
     }
     

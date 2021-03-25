@@ -11,6 +11,8 @@ import Logo from './cover.png';
 import Slider from './slider'
 import Slidertwo from './sliderTwo'
 import Sliderthree from './sliderThree';
+import SliderFour from './sliderFour';
+import SliderFive from './sliderFive';
 import {
   CSSTransition,
   TransitionGroup,
@@ -82,6 +84,8 @@ class App extends Component {
                 <Route path='/portfolio' component={Portfolio} />
                 <Route path='/slider' component={Slider} />
                 <Route path='/slidertwo' component={Slidertwo} />
+                <Route path='/salary' component={SliderFour} />
+                <Route path='/buttery' component={SliderFive} />
                 <Route path='/weather' component={Sliderthree} />
                 <Route component = {Notfound} />
             </Switch>
