@@ -10,9 +10,7 @@ This project was deployed using Netlify
 ### Built With
 
 - REACT : The web framework used
-- SASS : For Syles
-- NodeJS (Express) : Backend
-- MySQL : Database
+- CSS : For Syles
 
 ### Authors 
 
@@ -21,4 +19,4 @@ This project was deployed using Netlify
 ### Acknowledgments
 
 * Hat tip to Tcode assisting in critical parts
-* 
+
