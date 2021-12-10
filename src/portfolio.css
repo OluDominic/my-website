@@ -38,10 +38,13 @@
     justify-content: space-around;
 }
 
+.icons:hover {
+    color: black;
+}
 
 .project2:hover {
     border: 2px solid gray;
-    background: transparent;
+    transition: all 0.5s;
     color: white;
 }
 
@@ -52,8 +55,8 @@
 
 .project3:hover {
     border: 2px solid gray;
-    background: transparent;
     color: white;
+    transition: all 0.5s;
 }
 
 .projectFour {
@@ -63,8 +66,8 @@
 
 .projectFour:hover {
     border: 2px solid gray;
-    background: transparent;
     color: white;
+    transition: all 0.5s;
 }
 
 .projectFive {
@@ -74,13 +77,12 @@
 
 .projectFive:hover {
     border: 2px solid gray;
-    background: transparent;
     color: white;
+    transition: all 0.5s;
 }
 
 .project:hover {
     border: 2px solid gray;
-    background: transparent;
     color: white;
     transition: all 0.5s;
 }
@@ -127,8 +129,12 @@
         margin-top: 15%;
     }
 
-    .projectFour {
+    .project2:hover {
         margin-top: 0;
+    }
+
+    .project {
+        margin-bottom: 100px;
     }
     
 }
