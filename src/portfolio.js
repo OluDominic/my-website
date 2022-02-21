@@ -49,20 +49,20 @@ class Portfolio extends React.Component {
 
                 <div className="project2">
                 <span className="icons">
-                    <Link to={{pathname: "https://github.com/OluDominic/dog-ecommerce"}} target="_blank" className="icons">
+                    <Link to={{pathname: "https://github.com/OluDominic/tac-pay"}} target="_blank" className="icons">
                         <FontAwesomeIcon icon={faGithub} size="2x" color="gray" className="ecommerce"/>
                     </Link>
                 </span>
                 <span>
-                    <Link to={{pathname: "https://dog-commerce.herokuapp.com/"}} target="_blank">
+                    <Link to={{pathname: "https://poketmoni.herokuapp.com/"}} target="_blank">
                         <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
                     </Link>
                 </span>
-                    <p className="siwes">Doggypup <br/> E-commerce App.</p>
-                    <p className="languages">REST API/HTML/SCSS/REACT/REDUX</p>
+                    <p className="siwes">Poketmoni <br/> App.</p>
+                    <p className="languages">REACT/SCSS?REDUX/Node JS/</p>
                 </div>
 
-                <div className="projectFour">
+                <div className="project3">
                     <span className="icons">
                     <Link to={{pathname: "https://github.com/OluDominic/tas-salary-system"}} target="_blank">
                         <span>
