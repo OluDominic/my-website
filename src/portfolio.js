@@ -49,22 +49,7 @@ class Portfolio extends React.Component {
 
                 <div className="project2">
                 <span className="icons">
-                    <Link to={{pathname: "https://github.com/OluDominic/tac-pay"}} target="_blank" className="icons">
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" className="ecommerce"/>
-                    </Link>
-                </span>
-                <span>
-                    <Link to={{pathname: "https://poketmoni.herokuapp.com/"}} target="_blank">
-                        <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
-                    </Link>
-                </span>
-                    <p className="siwes">Poketmoni <br/> App.</p>
-                    <p className="languages">REACT/SCSS?REDUX/Node JS/</p>
-                </div>
-
-                <div className="project3">
-                    <span className="icons">
-                    <Link to={{pathname: "https://github.com/OluDominic/tas-salary-system"}} target="_blank">
+                    <Link to={{pathname: "https://github.com/OluDominic/Kryptommerce"}} target="_blank">
                         <span>
                         <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
                         </span>
@@ -72,12 +57,28 @@ class Portfolio extends React.Component {
                     </span>
                     
                     <span className="icons">
-                        <Link to={{pathname: "https://hr-management-app1.herokuapp.com/"}} target="_blank">
+                        <Link to={{pathname: "https://kryptommerce.herokuapp.com/"}} target="_blank">
                         <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
                         </Link>
                         </span>
-                    <p className="siwes">HR Management <br/> App.</p>
-                    <p className="languages">REACT/SASS/NODEJS/MYSql</p>
+                    <p className="siwes">Ethereum Blockchain <br />App.</p>
+                    <p className="languages">REACT/SASS/Solidity/ReactContext</p>
+               
+                </div>
+
+                <div className="project3">
+                    <span className="icons">
+                        <Link to={{pathname: "https://github.com/OluDominic/tac-pay"}} target="_blank" className="icons">
+                            <FontAwesomeIcon icon={faGithub} size="2x" color="gray" className="ecommerce"/>
+                        </Link>
+                    </span>
+                    <span>
+                        <Link to={{pathname: "https://poketmoni.herokuapp.com/"}} target="_blank">
+                            <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
+                        </Link>
+                    </span>
+                        <p className="siwes">Poketmoni <br/> App.</p>
+                        <p className="languages">REACT/SCSS/REDUX/Node JS/</p>
                 </div>
 
                 <div className="projectFive">
