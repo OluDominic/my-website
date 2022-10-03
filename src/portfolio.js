@@ -12,28 +12,28 @@ import { Helmet } from 'react-helmet';
 class Portfolio extends React.Component {
     
     constructor(props){
-        super(props);
-        this.state = {}
-    }
+            super(props);
+            this.state = {}
+        }
 
-    handleClick=()=> {
-        this.props.history.push('/slider')
-    }
+        handleClick=()=> {
+            this.props.history.push('/slider')
+        }
 
-    handleClickTwo=()=> {
-        this.props.history.push('/slidertwo')
-    }
+        handleClickTwo=()=> {
+            this.props.history.push('/slidertwo')
+        }
 
-    handleClickThree=()=> {
-        this.props.history.push('/weather')
-    }
+        handleClickThree=()=> {
+            this.props.history.push('/weather')
+        }
 
-    handleClickFour=()=> {
-        this.props.history.push('/salary')
-    }
+        handleClickFour=()=> {
+            this.props.history.push('/salary')
+        }
 
-    handleClickFive=()=> {
-        this.props.history.push('/buttery')
+        handleClickFive=()=> {
+            this.props.history.push('/buttery')
     }
 
     render() {
@@ -47,9 +47,27 @@ class Portfolio extends React.Component {
             <h1 className="header">My Projects</h1>
             <div className="portfolio">
 
-                <div className="project2">
-                <span className="icons">
-                    <Link to={{pathname: "https://github.com/OluDominic/Kryptommerce"}} target="_blank">
+            <div className="projec2">
+                    <span className="icons">
+                    <Link to={{pathname: "https://github.com/OluDominic/Kontekture"}} target="_blank">
+                        <span>
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
+                        </span>
+                        </Link>
+                    </span>
+                    
+                    <span className="icons">
+                        <Link to={{pathname: "https://kontekture.com/"}} target="_blank">
+                        <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
+                        </Link>
+                        </span>
+                    <p className="siwes">Kontekture Constructions <br/> </p>
+                    <p className="languages">REACT/FIREBASE/CONTEXT-API</p>
+                </div>
+
+                <div className="project3">
+                    <span className="icons">
+                        <Link to={{pathname: "https://github.com/OluDominic/Kryptommerce"}} target="_blank">
                         <span>
                         <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
                         </span>
@@ -60,13 +78,13 @@ class Portfolio extends React.Component {
                         <Link to={{pathname: "https://kryptommerce.herokuapp.com/"}} target="_blank">
                         <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
                         </Link>
-                        </span>
+                    </span>
                     <p className="siwes">Ethereum Blockchain <br />App.</p>
                     <p className="languages">REACT/SASS/Solidity/ReactContext</p>
                
                 </div>
 
-                <div className="project3">
+                <div className="projectFive">
                     <span className="icons">
                         <Link to={{pathname: "https://github.com/OluDominic/tac-pay"}} target="_blank" className="icons">
                             <FontAwesomeIcon icon={faGithub} size="2x" color="gray" className="ecommerce"/>
@@ -81,7 +99,7 @@ class Portfolio extends React.Component {
                         <p className="languages">REACT/SCSS/REDUX/Node JS/</p>
                 </div>
 
-                <div className="projectFive">
+                <div className="project">
                     <span className="icons">
                     <Link to={{pathname: "https://github.com/OluDominic/frontend-onboarding"}} target="_blank">
                         <span>
@@ -99,23 +117,7 @@ class Portfolio extends React.Component {
                     <p className="languages">REACT/SASS</p>
                 </div>
 
-                <div className="project">
-                    <span className="icons">
-                    <Link to={{pathname: "https://github.com/OluDominic/siwes/tree/master/src"}} target="_blank">
-                        <span>
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
-                        </span>
-                        </Link>
-                    </span>
-                    
-                    <span className="icons">
-                        <Link to={{pathname: "https://siwes-tech.herokuapp.com/"}} target="_blank">
-                        <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
-                        </Link>
-                        </span>
-                    <p className="siwes">E-Siwes <br/> App.</p>
-                    <p className="languages">HTML/CSS/REACT</p>
-                </div>
+                
 
                 {/* <div className="project3">
                 <span className="icons">
