@@ -47,18 +47,18 @@ class Portfolio extends React.Component {
             <h1 className="header">My Projects</h1>
             <div className="portfolio">
 
-            <div className="projec2">
+                <div className="project2">
                     <span className="icons">
                     <Link to={{pathname: "https://github.com/OluDominic/Kontekture"}} target="_blank">
                         <span>
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
                         </span>
                         </Link>
                     </span>
                     
                     <span className="icons">
                         <Link to={{pathname: "https://kontekture.com/"}} target="_blank">
-                        <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faLink} size="2x" color="black" />
                         </Link>
                         </span>
                     <p className="siwes">Kontekture Constructions <br/> </p>
@@ -69,14 +69,14 @@ class Portfolio extends React.Component {
                     <span className="icons">
                         <Link to={{pathname: "https://github.com/OluDominic/Kryptommerce"}} target="_blank">
                         <span>
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
                         </span>
                         </Link>
                     </span>
                     
                     <span className="icons">
                         <Link to={{pathname: "https://kryptommerce.herokuapp.com/"}} target="_blank">
-                        <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faLink} size="2x" color="black" />
                         </Link>
                     </span>
                     <p className="siwes">Ethereum Blockchain <br />App.</p>
@@ -86,16 +86,16 @@ class Portfolio extends React.Component {
 
                 <div className="projectFive">
                     <span className="icons">
-                        <Link to={{pathname: "https://github.com/OluDominic/tac-pay"}} target="_blank" className="icons">
-                            <FontAwesomeIcon icon={faGithub} size="2x" color="gray" className="ecommerce"/>
+                        <Link to={{pathname: "https://github.com/OluDominic/tas-salary-system"}} target="_blank" className="icons">
+                            <FontAwesomeIcon icon={faGithub} size="2x" color="black" className="ecommerce"/>
                         </Link>
                     </span>
                     <span>
-                        <Link to={{pathname: "https://poketmoni.herokuapp.com/"}} target="_blank">
-                            <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
+                        <Link to={{pathname: "https://hr-magt.herokuapp.com/"}} target="_blank">
+                            <FontAwesomeIcon icon={faLink} size="2x" color="black" />
                         </Link>
                     </span>
-                        <p className="siwes">Poketmoni <br/> App.</p>
+                        <p className="siwes">Hr Management <br/> App.</p>
                         <p className="languages">REACT/SCSS/REDUX/Node JS/</p>
                 </div>
 
@@ -103,14 +103,14 @@ class Portfolio extends React.Component {
                     <span className="icons">
                     <Link to={{pathname: "https://github.com/OluDominic/frontend-onboarding"}} target="_blank">
                         <span>
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
                         </span>
                         </Link>
                     </span>
                     
                     <span className="icons">
                         <Link to={{pathname: "https://shielded-citadel-81661.herokuapp.com/"}} target="_blank">
-                        <FontAwesomeIcon icon={faLink} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faLink} size="2x" color="black" />
                         </Link>
                         </span>
                     <p className="siwes">Food Order <br/> App.</p>
@@ -122,12 +122,12 @@ class Portfolio extends React.Component {
                 {/* <div className="project3">
                 <span className="icons">
                     <a href="https://github.com/OluDominic/weather-app" className="icons">
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="gray"/>
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="black"/>
                     </a>
                 </span>
                 <span>
                     <Link onClick={this.handleClickThree}>
-                        <FontAwesomeIcon icon={faClone} size="2x" color="gray" />
+                        <FontAwesomeIcon icon={faClone} size="2x" color="black" />
                     </Link>
                 </span>
                     <p className="siwes">My Weather App <br/> API.</p>

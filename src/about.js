@@ -32,9 +32,8 @@ class About extends React.Component {
                 </div>
                 
                 <div className="about-me">
-                    <p>Junior developer professionally connected with the web development industry.</p>
+                    <p>Web developer professionally connected with the web development industry.</p>
                     <p>Front-End Developer (ReactJS, JavaScript, HTML, CSS) Back-end (Node)</p>
-                    <p>Software Developer who has passion in playing my role in the vast change in the tech world.</p>
                     <p>Well-organised person, problem solver, independent employee with high attention to detail.
                         Love watching football, playing video games at my leisure time.
                     </p>

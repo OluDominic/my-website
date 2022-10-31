@@ -13,7 +13,7 @@ class Home extends React.Component {
                    
                 <h4 className="hello-world"><span className="hello"><span className="headers">&lt;h1&gt;</span>Hello, </span> World.<span className="headers">&lt;/h1&gt;</span></h4>
                 <h3 className="name">I'm Dominic Oludare </h3>
-                <p className="prof">| Front-end Developer | Digital Marketer |</p>
+                <p className="prof">| Front-end Developer | </p>
               </div>
               <div>
               <Link to="/contact" className="buttons">
