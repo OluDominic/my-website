@@ -65,7 +65,7 @@ class App extends Component {
                 <NavLink to={'/about'} exact activeStyle={{color: 'grey'}} className="nav-link">About</NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/portfolio'} exact activeStyle={{color: 'grey'}} className="nav-link">Works</NavLink>
+                <NavLink to={'/portfolio'} exact activeStyle={{color: 'grey'}} className="nav-link">Portfolio</NavLink>
             </li>
           </ul>
           <i onClick={this.onBar} className={this.state.open ? 'fas fa-times' : 'fas fa-bars bars'}></i>
