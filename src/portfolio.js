@@ -120,19 +120,21 @@ class Portfolio extends React.Component {
                 
 
                 <div className="project3">
-                <span className="icons">
-                    <a href="https://github.com/OluDominic/weather-app" className="icons">
-                        <FontAwesomeIcon icon={faGithub} size="2x" color="black"/>
-                    </a>
-                </span>
-                <span>
-                    <Link onClick={this.handleClickThree}>
-                        <FontAwesomeIcon icon={faClone} size="2x" color="black" />
-                    </Link>
-                </span>
-                    <p className="siwes">My Weather App <br/> API.</p>
-                    <p className="languages">API HTML CSS REACT</p>
-            </div>
+                    <span className="icons">
+                    <Link to={{pathname: "https://github.com/OluDominic/weather-app"}} target="_blank">
+                        <span>
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
+                        </span>
+                        </Link>
+                    </span>
+                    <span>
+                        <Link onClick={this.handleClickThree}>
+                            <FontAwesomeIcon icon={faClone} size="2x" color="black" />
+                        </Link>
+                    </span>
+                        <p className="siwes">My Weather App <br/> API.</p>
+                        <p className="languages">API HTML CSS REACT</p>
+                </div>
             
             </div>
             </div>
