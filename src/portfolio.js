@@ -57,7 +57,7 @@ class Portfolio extends React.Component {
                     </span>
                     
                     <span className="icons">
-                        <Link to={{pathname: "https://kontekture.com/"}} target="_blank">
+                        <Link to={{pathname: "https://66c4b16c70e0d60b49966dc8--kontekture.netlify.app/"}} target="_blank">
                         <FontAwesomeIcon icon={faLink} size="2x" color="black" />
                         </Link>
                         </span>
@@ -75,7 +75,7 @@ class Portfolio extends React.Component {
                     </span>
                     
                     <span className="icons">
-                        <Link to={{pathname: "https://kryptommerce.herokuapp.com/"}} target="_blank">
+                        <Link to={{pathname: "https://66c4b7b459e31b188bdcac88--astonishing-faun-2581eb.netlify.app/"}} target="_blank">
                         <FontAwesomeIcon icon={faLink} size="2x" color="black" />
                         </Link>
                     </span>
@@ -84,7 +84,7 @@ class Portfolio extends React.Component {
                
                 </div>
 
-                <div className="projectFive">
+                {/* <div className="projectFive">
                     <span className="icons">
                         <Link to={{pathname: "https://github.com/OluDominic/tas-salary-system"}} target="_blank" className="icons">
                             <FontAwesomeIcon icon={faGithub} size="2x" color="black" className="ecommerce"/>
@@ -97,11 +97,11 @@ class Portfolio extends React.Component {
                     </span>
                         <p className="siwes">Hr Management <br/> App.</p>
                         <p className="languages">REACT/SCSS/REDUX/Node JS/</p>
-                </div>
+                </div> */}
 
                 <div className="project">
                     <span className="icons">
-                    <Link to={{pathname: "https://github.com/OluDominic/frontend-onboarding"}} target="_blank">
+                    <Link to={{pathname: "https://transcendent-churros-ce07a2.netlify.app/"}} target="_blank">
                         <span>
                         <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
                         </span>
@@ -119,7 +119,7 @@ class Portfolio extends React.Component {
 
                 
 
-                {/* <div className="project3">
+                <div className="project3">
                 <span className="icons">
                     <a href="https://github.com/OluDominic/weather-app" className="icons">
                         <FontAwesomeIcon icon={faGithub} size="2x" color="black"/>
@@ -132,7 +132,7 @@ class Portfolio extends React.Component {
                 </span>
                     <p className="siwes">My Weather App <br/> API.</p>
                     <p className="languages">API HTML CSS REACT</p>
-            </div> */}
+            </div>
             
             </div>
             </div>
