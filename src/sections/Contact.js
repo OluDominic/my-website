@@ -43,8 +43,8 @@ const Contact = () => {
     {
       icon: faPhone,
       label: 'Phone',
-      value: '+234 XXX XXX XXXX',
-      link: 'tel:+234XXXXXXXXX'
+      value: '+2347052065184',
+      link: 'tel:+2347052065184'
     },
     {
       icon: faMapMarkerAlt,
