@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, NavLink, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, NavLink, Route, Link } from "react-router-dom";
 import Notfound from './notfound'
-import history from './history';
 import Home from './home';
 import About from './about';
 import Contact from './contact';
@@ -34,7 +33,7 @@ class App extends Component {
   }
   render() {
     return (
-        <BrowserRouter history={history}>
+        <BrowserRouter>
         <div className="body">
           <Helmet>
             <meta charSet="UTF-8" />
@@ -56,42 +55,33 @@ class App extends Component {
           "translateX(-300px)"}}>
           
             <li className="link">
-                <NavLink to={'/'} exact activeStyle={{color: 'grey'}} className="nav-link"> Home </NavLink>
+                <NavLink to={'/'} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}> Home </NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/contact'} exact activeStyle={{color: 'grey'}} className="nav-link">Contact</NavLink>
+                <NavLink to={'/contact'} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Contact</NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/about'} exact activeStyle={{color: 'grey'}} className="nav-link">About</NavLink>
+                <NavLink to={'/about'} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>About</NavLink>
             </li>
             <li className="link">
-                <NavLink to={'/portfolio'} exact activeStyle={{color: 'grey'}} className="nav-link">Portfolio</NavLink>
+                <NavLink to={'/portfolio'} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Portfolio</NavLink>
             </li>
           </ul>
           <i onClick={this.onBar} className={this.state.open ? 'fas fa-times' : 'fas fa-bars bars'}></i>
           </nav>
           </div>
-          <Route render={({location})=> (
-            <TransitionGroup>
-            <CSSTransition
-                timeout={500}
-                classNames="fade"
-              >
-            <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path='/contact' component={Contact} />
-                <Route path='/about' component={About} />
-                <Route path='/portfolio' component={Portfolio} />
-                <Route path='/slider' component={Slider} />
-                <Route path='/slidertwo' component={Slidertwo} />
-                <Route path='/salary' component={SliderFour} />
-                <Route path='/buttery' component={SliderFive} />
-                <Route path='/weather' component={Sliderthree} />
-                <Route component = {Notfound} />
-            </Switch>
-           </CSSTransition>
-          </TransitionGroup>
-          )} />
+          <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/slider' element={<Slider />} />
+                <Route path='/slidertwo' element={<Slidertwo />} />
+                <Route path='/salary' element={<SliderFour />} />
+                <Route path='/buttery' element={<SliderFive />} />
+                <Route path='/weather' element={<Sliderthree />} />
+                <Route path='*' element={<Notfound />} />
+          </Routes>
         
         </div>
         </BrowserRouter>

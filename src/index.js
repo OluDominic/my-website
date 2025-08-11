@@ -1,25 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Website from './website'
-//import Slider from './slider'
+import { createRoot } from 'react-dom/client';
+import App from './App';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-
-class WebsitePage extends React.Component {
-
-  render(){
-    return(
-        <Website />
-    );
-  }
-}
-
-
-ReactDOM.render(
-  <WebsitePage />,
-  document.getElementById('root')
-);
-
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
 
 serviceWorker.unregister();
