@@ -5,7 +5,7 @@ import './Hero.css';
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState(0);
-  const texts = ['Front-end Developer', 'React Specialist', 'Problem Solver'];
+  const texts = ['Front-end Developer', 'UI Specialist', 'Problem Solver'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
             <p className="hero-description">
               Passionate about creating beautiful, functional, and user-friendly web applications. 
-              I specialize in React development and modern web technologies.
+              I specialize in React and React Native development and modern web technologies.
             </p>
             
             <div className="hero-buttons">

@@ -209,14 +209,16 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 0 1rem;
-    min-height: 90vh;
+     padding-top: 80px; /* ✅ make sure hero starts below navbar */
+    min-height: calc(100vh - 80px);
+    align-items: flex-start;
   }
   
   .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    margin-top: 1rem;
   }
   
   .hero-title {

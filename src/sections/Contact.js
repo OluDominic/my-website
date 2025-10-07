@@ -120,7 +120,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-form">
+        {/* <div className="contact-form">
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -182,7 +182,7 @@ const Contact = () => {
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   );

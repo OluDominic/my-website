@@ -10,28 +10,17 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Naija Bank Finder',
-      description: 'A comprehensive web application for finding Nigerian banks and their branch information. Users can search for banks by state and get detailed branch addresses and contact information.',
-      image: '/api/placeholder/400/250',
-      technologies: ['React', 'Vite', 'JavaScript', 'CSS3'],
-      category: 'Frontend',
-      githubUrl: 'https://github.com/OluDominic/bank-finder',
-      liveUrl: 'https://naija-bank-finder.vercel.app/',
-      features: ['Bank Search', 'Branch Locator', 'State-wise Filtering', 'Responsive Design']
-    },
-    {
-      id: 2,
       title: 'Swop - Mobile Wallet',
       description: 'A mobile wallet application where users can generate account numbers, make bank transfers, purchase airtime/data, and pay bills. Complete financial management solution.',
       image: '/api/placeholder/400/250',
       technologies: ['React Native', 'Mobile Development', 'Payment Integration', 'API'],
       category: 'Mobile',
       githubUrl: '#',
-      liveUrl: '#',
+      liveUrl: 'https://play.google.com/store/apps/details?id=com.swops&pcampaignid=web_share',
       features: ['Account Generation', 'Bank Transfers', 'Airtime/Data Purchase', 'Bill Payments']
     },
     {
-      id: 3,
+      id: 2,
       title: 'Kontekture Constructions',
       description: 'A comprehensive construction management platform built with React and Firebase. Features real-time project tracking, client management, and resource allocation.',
       image: '/api/placeholder/400/250',
@@ -42,7 +31,35 @@ const Projects = () => {
       features: ['Project Management', 'Real-time Updates', 'Client Portal', 'Resource Tracking']
     },
     {
+      id: 3,
+      title: 'SPay Business Landing Page',
+      description: 'A responsive landing page showcasing SPay’s digital payment and business solutions.',
+      image: '/api/placeholder/400/250',
+      technologies: ['React', 'SASS'],
+      category: 'Frontend',
+      githubUrl: '#',
+      liveUrl: 'https://spaybusiness.com/',
+      features: [
+        'Modern UI with clean, responsive design',
+        'Smooth animations and scroll interactions',
+        'Sections for features, pricing, and contact',
+        'Optimized for performance and SEO',
+        'Cross-browser and mobile compatibility'
+      ]
+    },
+    {
       id: 4,
+      title: 'Naija Bank Finder',
+      description: 'A comprehensive web application for finding Nigerian banks and their branch information. Users can search for banks by state and get detailed branch addresses and contact information.',
+      image: '/api/placeholder/400/250',
+      technologies: ['React', 'Vite', 'JavaScript', 'CSS3'],
+      category: 'Frontend',
+      githubUrl: 'https://github.com/OluDominic/bank-finder',
+      liveUrl: 'https://naija-bank-finder.vercel.app/',
+      features: ['Bank Search', 'Branch Locator', 'State-wise Filtering', 'Responsive Design']
+    },
+    {
+      id: 5,
       title: 'Ethereum Blockchain App',
       description: 'A decentralized application (DApp) for cryptocurrency transactions and smart contract interactions. Built with React and Solidity.',
       image: '/api/placeholder/400/250',
@@ -51,17 +68,6 @@ const Projects = () => {
       githubUrl: 'https://github.com/OluDominic/Kryptommerce',
       liveUrl: 'https://66c4b7b459e31b188bdcac88--astonishing-faun-2581eb.netlify.app/',
       features: ['Smart Contracts', 'Crypto Transactions', 'Wallet Integration', 'DApp Interface']
-    },
-    {
-      id: 5,
-      title: 'Food Order App',
-      description: 'A modern food delivery application with menu management, order tracking, and payment integration. Features responsive design and user-friendly interface.',
-      image: '/api/placeholder/400/250',
-      technologies: ['React', 'SASS', 'Node.js', 'Express'],
-      category: 'Full Stack',
-      githubUrl: 'https://transcendent-churros-ce07a2.netlify.app/',
-      liveUrl: 'https://shielded-citadel-81661.herokuapp.com/',
-      features: ['Menu Management', 'Order Tracking', 'Payment Integration', 'Responsive Design']
     },
     {
       id: 6,

@@ -9,7 +9,8 @@ import {
   faGitAlt, 
   faNpm,
   faSass,
-  faWordpress
+  faWordpress,
+  faCodepen,
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import './Skills.css';
@@ -80,11 +81,11 @@ const Skills = () => {
       category: 'Frontend'
     },
     {
-      name: 'WordPress',
-      icon: faWordpress,
+      name: 'TypeScript',
+      icon: faCodepen,
       level: 75,
       color: '#21759B',
-      category: 'CMS'
+      category: 'Frontend'
     }
   ];
 
@@ -131,7 +132,7 @@ const Skills = () => {
                 </div>
               </div>
               
-              <div className="skill-progress">
+              {/* <div className="skill-progress">
                 <div className="progress-bar">
                   <div 
                     className="progress-fill"
@@ -142,7 +143,7 @@ const Skills = () => {
                   ></div>
                 </div>
                 <span className="progress-text">{skill.level}%</span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
