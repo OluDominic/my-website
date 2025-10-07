@@ -9,7 +9,6 @@ import {
   faGitAlt, 
   faNpm,
   faSass,
-  faWordpress,
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
